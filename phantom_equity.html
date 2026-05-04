@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phantom Equity</title>
+<meta name="title" content="Phantom Equity">
+<meta name="description" content="AIM AI Care Manager Phantom Equity Program">
+<meta property="og:title" content="Phantom Equity">
+<meta property="og:description" content="AIM AI Care Manager Phantom Equity Program">
+<meta property="og:type" content="website">
+<meta name="twitter:title" content="Phantom Equity">
+<meta name="twitter:description" content="AIM AI Care Manager Phantom Equity Program">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --logo: url("data:image/png;base64,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");
+  --bg: #ffffff; --bg2: #f7f7f5; --bg3: #efeeea; --bg4: #e2e1da;
+  --text: #000000; --t2: #4a4a44; --t3: #8a8a82;
+  --bd: #e4e3da; --bd2: #c4c3ba;
+  --aim: #2563eb; --aiml: #dbeafe; --aimt: #1e3a8a;
+  --teal: #0f6e56; --teall: #e1f5ee; --tealt: #0a5040;
+  --amb: #92400e; --ambl: #fef3c7;
+  --cor: #991b1b; --corl: #fee2e2;
+  --pur: #4338ca; --purl: #e0e7ff;
+  --green: #15803d; --greenl: #d1fae5;
+  --sw: 240px; --topbar: 54px; --r: 12px; --rs: 8px;
+}
+html, body { height: 100%; background: #ffffff; color: var(--text); font-family: -apple-system, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif; font-size: 14px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+.app { display: flex; height: 100vh; overflow: hidden; background: #ffffff; }
+.sidebar { width: var(--sw); min-width: var(--sw); flex-shrink: 0; background: var(--bg2); border-right: 1px solid var(--bd); display: flex; flex-direction: column; overflow-y: auto; overflow-x: hidden; }
+.s-head { padding: 18px 16px 14px; border-bottom: 1px solid var(--bd); flex-shrink: 0; }
+.logo-img { height: 28px; width: 61px; display: block; background-image: var(--logo); background-size: contain; background-repeat: no-repeat; background-position: left center; }
+.s-sub { font-size: 11px; color: var(--t3); margin-top: 6px; }
+.status-locked { margin: 12px 10px 4px; padding: 12px 14px; background: var(--bg3); border-radius: var(--rs); border: 1px dashed var(--bd2); cursor: pointer; transition: background .15s, border-color .15s; display: flex; align-items: center; gap: 10px; width: calc(100% - 20px); }
+.status-locked:hover { background: var(--bg4); border-color: var(--t3); }
+.status-locked-icon { width: 18px; height: 18px; flex-shrink: 0; color: var(--t2); }
+.status-locked-text { flex: 1; text-align: left; }
+.status-locked-label { font-size: 10px; text-transform: uppercase; letter-spacing: .06em; color: var(--t3); margin-bottom: 1px; font-weight: 600; }
+.status-locked-msg { font-size: 13px; font-weight: 600; color: var(--text); }
+.status-in { margin: 12px 10px 4px; padding: 10px 12px; background: var(--greenl); border-radius: var(--rs); border: 1px solid var(--green); display: flex; align-items: center; gap: 10px; }
+.status-in-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.15); flex-shrink: 0; animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.15); } 50% { box-shadow: 0 0 0 5px rgba(21, 128, 61, 0.08); } }
+.status-in-info { flex: 1; min-width: 0; }
+.status-in-label { font-size: 10px; text-transform: uppercase; letter-spacing: .06em; color: var(--green); margin-bottom: 1px; font-weight: 700; }
+.status-in-role { font-size: 13px; font-weight: 700; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.status-in-logout { background: #fff; border: 1px solid var(--green); color: var(--green); font-size: 11px; font-weight: 600; padding: 5px 10px; border-radius: 6px; cursor: pointer; transition: all .12s; font-family: inherit; flex-shrink: 0; }
+.status-in-logout:hover { background: var(--green); color: #fff; }
+.empty-msg { padding: 30px 20px 16px; font-size: 12px; color: var(--t3); line-height: 1.6; text-align: center; }
+.nsec { padding: 8px 10px 4px; }
+.nlbl { font-size: 10px; font-weight: 700; color: var(--t3); text-transform: uppercase; letter-spacing: .08em; padding: 0 8px; margin-bottom: 3px; }
+.ni { display: flex; align-items: center; gap: 9px; padding: 8px 10px; border-radius: var(--rs); cursor: pointer; font-size: 13px; color: var(--t2); border: none; background: none; width: 100%; text-align: left; transition: background .12s, color .12s; }
+.ni:hover { background: var(--bg3); color: var(--text); }
+.ni.active { background: var(--aiml); color: var(--aimt); font-weight: 500; }
+.nico { width: 15px; height: 15px; flex-shrink: 0; opacity: .55; }
+.ni.active .nico { opacity: 1; }
+.main { flex: 1; overflow-y: auto; overflow-x: hidden; background: #ffffff; }
+.wrap { max-width: 700px; margin: 0 auto; padding: 32px 28px 80px; }
+.topbar { display: none; position: fixed; top: 0; left: 0; right: 0; height: var(--topbar); background: #ffffff; border-bottom: 1px solid var(--bd); z-index: 300; align-items: center; padding: 0 12px; gap: 8px; }
+.tb-back { display: none; width: 36px; height: 36px; border: none; background: none; cursor: pointer; align-items: center; justify-content: center; border-radius: var(--rs); color: var(--text); flex-shrink: 0; }
+.tb-back:hover { background: var(--bg2); }
+.tb-logo { height: 22px; width: 48px; flex-shrink: 0; background-image: var(--logo); background-size: contain; background-repeat: no-repeat; background-position: left center; }
+.tb-title { flex: 1; font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text); min-width: 0; }
+.tb-burger { width: 36px; height: 36px; display: flex; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 7px; border-radius: var(--rs); flex-shrink: 0; }
+.tb-burger span { display: block; height: 1.5px; background: var(--text); border-radius: 2px; transition: all .22s ease; }
+.tb-burger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.tb-burger.open span:nth-child(2) { opacity: 0; }
+.tb-burger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.4); z-index: 200; }
+.overlay.visible { display: block; }
+@media (max-width: 720px) {
+  .topbar { display: flex; }
+  .app { display: block; height: 100vh; overflow: hidden; }
+  .sidebar { position: fixed; top: 0; left: 0; bottom: 0; width: 280px; min-width: 280px; z-index: 250; transform: translateX(-100%); transition: transform .26s ease; padding-top: var(--topbar); }
+  .sidebar.open { transform: translateX(0); }
+  .main { height: 100vh; padding-top: var(--topbar); overflow-y: auto; background: #ffffff; }
+  .wrap { padding: 20px 16px 80px; }
+  .ob-h1 { font-size: 21px !important; }
+  .payout-big { font-size: 34px !important; }
+  .score-big { font-size: 38px !important; }
+  .phdr h1 { font-size: 19px !important; }
+  .tc { grid-template-columns: 1fr !important; }
+  .mets { grid-template-columns: 1fr 1fr !important; }
+}
+@media (max-width: 400px) { .role-grid { grid-template-columns: 1fr !important; } .lgrid { grid-template-columns: 1fr !important; } }
+.page { display: none; }
+.page.active { display: block; }
+.ob-center { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 76vh; text-align: center; padding: 20px 0; }
+.ob-logo-big { height: 44px; width: 96px; margin-bottom: 24px; background-image: var(--logo); background-size: contain; background-repeat: no-repeat; background-position: center center; }
+.ob-h1 { font-size: 26px; font-weight: 800; letter-spacing: -.03em; margin-bottom: 10px; color: var(--text); }
+.ob-sub { font-size: 14px; color: var(--t2); max-width: 380px; margin: 0 auto 32px; line-height: 1.7; }
+.ob-q { font-size: 13px; font-weight: 600; margin-bottom: 14px; color: var(--text); }
+.role-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; width: 100%; max-width: 580px; }
+.rcard { background: #fff; border: 1.5px solid var(--bd); border-radius: var(--r); padding: 18px 14px; cursor: pointer; transition: border-color .15s, background .15s, transform .1s; text-align: left; position: relative; }
+.rcard:hover { border-color: var(--aim); background: var(--aiml); transform: translateY(-1px); }
+.rcard-ico { width: 34px; height: 34px; border-radius: var(--rs); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
+.rcard-title { font-size: 14px; font-weight: 600; margin-bottom: 3px; color: var(--text); }
+.rcard-desc { font-size: 12px; color: var(--t2); line-height: 1.5; }
+.lock-badge { position: absolute; top: 10px; right: 10px; width: 16px; height: 16px; opacity: .35; }
+@media (max-width: 600px) { .role-grid { grid-template-columns: 1fr 1fr; } }
+.pwmod { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 400; align-items: center; justify-content: center; padding: 20px; }
+.pwmod.show { display: flex; }
+.pwmod-box { background: #fff; border-radius: 14px; padding: 24px; max-width: 360px; width: 100%; box-shadow: 0 10px 40px rgba(0,0,0,.2); }
+.pwmod-icon { width: 44px; height: 44px; border-radius: 50%; background: var(--aiml); display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+.pwmod-h { font-size: 17px; font-weight: 700; margin-bottom: 4px; color: var(--text); }
+.pwmod-p { font-size: 13px; color: var(--t2); margin-bottom: 16px; line-height: 1.55; }
+.pwmod-input { width: 100%; padding: 11px 13px; font-size: 14px; border: 1.5px solid var(--bd); border-radius: var(--rs); background: #fff; color: var(--text); font-family: inherit; outline: none; transition: border-color .15s; }
+.pwmod-input:focus { border-color: var(--aim); }
+.pwmod-input.shake { animation: shakebox .4s; border-color: var(--cor); }
+@keyframes shakebox { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+.pwmod-err { font-size: 12px; color: var(--cor); min-height: 16px; margin-top: 6px; }
+.pwmod-btns { display: flex; gap: 8px; margin-top: 14px; }
+.pwmod-btn { flex: 1; padding: 11px 16px; font-size: 14px; font-weight: 600; border: none; border-radius: var(--rs); cursor: pointer; transition: background .12s; font-family: inherit; }
+.pwmod-cancel { background: var(--bg3); color: var(--t2); }
+.pwmod-cancel:hover { background: var(--bg4); }
+.pwmod-go { background: var(--aim); color: #fff; }
+.pwmod-go:hover { background: var(--aimt); }
+.phdr { margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid var(--bd); }
+.phdr h1 { font-size: 22px; font-weight: 800; letter-spacing: -.02em; margin-bottom: 4px; color: var(--text); }
+.phdr p { font-size: 14px; color: var(--t2); }
+.brow { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+.bdg { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 99px; }
+.bdg-t { background: var(--teall); color: var(--tealt); }
+.bdg-b { background: var(--aiml); color: var(--aimt); }
+.bdg-a { background: var(--ambl); color: var(--amb); }
+.bdg-c { background: var(--corl); color: var(--cor); }
+.bdg-p { background: var(--purl); color: var(--pur); }
+.quote { border-left: 3px solid var(--aim); padding: 14px 18px; background: var(--aiml); border-radius: 0 var(--rs) var(--rs) 0; margin-bottom: 20px; }
+.quote p { font-size: 14px; color: var(--aimt); font-style: italic; line-height: 1.7; }
+.mets { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 20px; }
+.met { background: var(--bg2); border-radius: var(--r); padding: 14px 16px; border: 1px solid var(--bd); }
+.met-lbl { font-size: 10px; text-transform: uppercase; letter-spacing: .05em; color: var(--t3); margin-bottom: 4px; }
+.met-val { font-size: 22px; font-weight: 800; letter-spacing: -.02em; color: var(--text); }
+.met-sub { font-size: 11px; color: var(--t2); margin-top: 2px; }
+.card { background: #fff; border: 1px solid var(--bd); border-radius: var(--r); padding: 18px 20px; margin-bottom: 14px; }
+.card-title { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--t3); margin-bottom: 14px; }
+.card-intro { font-size: 13px; color: var(--t2); margin-bottom: 14px; line-height: 1.6; }
+.tc { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; font-size: 11px; font-weight: 600; color: var(--t3); padding: 7px 10px; border-bottom: 1px solid var(--bd); }
+td { padding: 9px 10px; border-bottom: 1px solid var(--bd); color: var(--t2); }
+tr:last-child td { border-bottom: none; }
+.td-strong { color: var(--text) !important; font-weight: 600; }
+.td-zero { color: var(--t3) !important; }
+.yn-row { display: flex; justify-content: space-between; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--bd); gap: 12px; }
+.yn-row:last-child { border-bottom: none; }
+.yn-row > span:first-child { font-size: 13px; color: var(--t2); flex: 1; }
+.yn-row strong { color: var(--text); font-weight: 600; }
+.tick { color: var(--teal); font-size: 14px; font-weight: 700; flex-shrink: 0; }
+.cross { color: var(--cor); font-size: 14px; font-weight: 700; flex-shrink: 0; }
+.ibox { background: var(--aiml); border-radius: var(--rs); padding: 12px 14px; font-size: 13px; color: var(--aimt); margin-bottom: 14px; line-height: 1.6; }
+.ibox strong { color: var(--aimt); }
+.wbox { background: var(--ambl); border-radius: var(--rs); padding: 12px 14px; font-size: 13px; color: var(--amb); margin-bottom: 14px; line-height: 1.6; }
+.gbox { background: var(--greenl); border-radius: var(--rs); padding: 12px 14px; font-size: 13px; color: #064e30; margin-bottom: 14px; line-height: 1.6; border: 1px solid #6ee7b7; }
+.gbox strong { color: #064e30; }
+input[type=range] { width: 100%; -webkit-appearance: none; appearance: none; height: 5px; background: var(--bg3); border-radius: 3px; outline: none; border: none; cursor: pointer; }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 20px; height: 20px; border-radius: 50%; background: var(--aim); cursor: pointer; border: 3px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.2); }
+input[type=range]::-moz-range-thumb { width: 20px; height: 20px; border-radius: 50%; background: var(--aim); cursor: pointer; border: 3px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.2); }
+.slider-row { margin-bottom: 20px; }
+.slider-labels { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 9px; }
+.slider-labels .lbl { color: var(--t2); }
+.slider-labels .val { font-weight: 700; color: var(--text); }
+.slider-range { display: flex; justify-content: space-between; font-size: 11px; color: var(--t3); margin-top: 5px; }
+.payout-box { background: var(--bg2); border-radius: var(--r); padding: 24px 20px; text-align: center; margin-top: 22px; border: 1px solid var(--bd); }
+.payout-big { font-size: 42px; font-weight: 800; letter-spacing: -.04em; color: var(--text); margin-bottom: 5px; }
+.payout-note { font-size: 12px; color: var(--t3); }
+.formula-box { background: var(--bg2); border-radius: var(--rs); padding: 14px 16px; font-family: 'SF Mono', 'Courier New', monospace; font-size: 12px; color: var(--t2); line-height: 2; border: 1px solid var(--bd); }
+.lgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+.lcard { border: 1.5px solid var(--bd); border-radius: var(--r); padding: 14px 16px; cursor: pointer; transition: all .15s; background: #fff; }
+.lcard:hover { border-color: var(--bd2); background: var(--bg2); }
+.lcard.sel { border-color: var(--aim); background: var(--aiml); }
+.lcard-num { font-size: 10px; text-transform: uppercase; letter-spacing: .06em; color: var(--t3); margin-bottom: 4px; }
+.lcard-title { font-size: 14px; font-weight: 600; margin-bottom: 2px; color: var(--text); }
+.lcard-pts { font-size: 12px; color: var(--t2); }
+.ldet { background: var(--bg2); border-radius: var(--r); padding: 18px 20px; border: 1px solid var(--bd); margin-bottom: 14px; }
+.ldet-ex { display: flex; gap: 8px; font-size: 13px; color: var(--t2); margin-bottom: 6px; line-height: 1.55; }
+.ldet-dot { color: var(--t3); flex-shrink: 0; }
+.ldet-pays { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--bd); }
+.ldet-pay { font-size: 13px; }
+.ldet-pay span { color: var(--t3); }
+.ldet-pay strong { color: var(--text); }
+.vbar { display: flex; gap: 2px; height: 12px; border-radius: 6px; overflow: hidden; margin: 10px 0 6px; }
+.vseg { flex: 1; background: var(--bg3); }
+.vseg.on { background: var(--teal); }
+.vseg.cliff { background: #f59e0b; }
+.vbar-labels { display: flex; justify-content: space-between; font-size: 11px; color: var(--t3); margin-bottom: 18px; }
+.vleg { display: flex; gap: 14px; margin-bottom: 12px; flex-wrap: wrap; }
+.vleg-item { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--t2); }
+.vleg-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+.sc-cat { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--bd); }
+.sc-cat:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.sc-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.sc-label { font-size: 13px; color: var(--t2); }
+.sc-meta { display: flex; align-items: center; gap: 10px; }
+.sc-weight { font-size: 11px; color: var(--t3); }
+.sc-val { font-size: 14px; font-weight: 700; color: var(--text); min-width: 28px; text-align: right; }
+.score-result { background: var(--bg2); border-radius: var(--r); padding: 22px; margin-top: 20px; text-align: center; border: 1px solid var(--bd); }
+.score-big { font-size: 48px; font-weight: 800; letter-spacing: -.04em; color: var(--text); }
+.score-grant { font-size: 15px; color: var(--t2); margin-top: 6px; }
+.rule-item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--bd); align-items: flex-start; }
+.rule-item:last-child { border-bottom: none; }
+.rule-num { width: 24px; height: 24px; border-radius: 50%; background: var(--bg2); border: 1px solid var(--bd); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: var(--t2); flex-shrink: 0; margin-top: 1px; }
+.rule-text { font-size: 14px; color: var(--t2); line-height: 1.6; }
+.step-item { display: flex; gap: 14px; }
+.step-line { display: flex; flex-direction: column; align-items: center; }
+.step-dot { width: 22px; height: 22px; border-radius: 50%; background: var(--aiml); border: 2px solid var(--aim); display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 800; color: var(--aimt); flex-shrink: 0; }
+.step-conn { width: 2px; background: var(--bd); flex: 1; min-height: 16px; margin: 3px 0; }
+.step-body { padding-bottom: 16px; padding-top: 1px; }
+.step-title { font-size: 13px; font-weight: 600; color: var(--text); }
+.step-sub { font-size: 12px; color: var(--t3); margin-top: 1px; }
+.math-step { background: var(--bg2); border-radius: var(--rs); padding: 14px 16px; margin-bottom: 12px; border: 1px solid var(--bd); }
+.math-step-num { font-size: 11px; font-weight: 700; color: var(--aim); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
+.math-step-text { font-size: 13px; color: var(--t2); line-height: 1.6; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-thumb { background: var(--bg4); border-radius: 2px; }
+</style>
+</head>
+<body>
+<div class="topbar" id="topbar">
+  <button class="tb-back" id="btnBack" aria-label="Back"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M11 14L6 9l5-5"/></svg></button>
+  <div class="tb-logo" role="img" aria-label="aim"></div>
+  <span class="tb-title" id="topTitle">Phantom Equity</span>
+  <button class="tb-burger" id="btnBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+</div>
+<div class="overlay" id="overlay"></div>
+<div class="pwmod" id="pwModal">
+  <div class="pwmod-box">
+    <div class="pwmod-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#2563eb" stroke-width="2"><rect x="4" y="9" width="12" height="9" rx="1.5"/><path d="M7 9V6a3 3 0 016 0v3"/></svg></div>
+    <div class="pwmod-h">Enter access code</div>
+    <p class="pwmod-p">Access to <strong id="pwRoleName">Employee</strong> view requires a code provided by the founders.</p>
+    <input type="password" class="pwmod-input" id="pwInput" placeholder="Access code" autocomplete="off">
+    <div class="pwmod-err" id="pwError"></div>
+    <div class="pwmod-btns">
+      <button class="pwmod-btn pwmod-cancel" id="pwCancel">Cancel</button>
+      <button class="pwmod-btn pwmod-go" id="pwSubmit">Unlock</button>
+    </div>
+  </div>
+</div>
+
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="s-head">
+      <div class="logo-img" role="img" aria-label="aim"></div>
+      <div class="s-sub">Phantom Equity Program</div>
+    </div>
+    <button class="status-locked" id="pillLocked">
+      <svg class="status-locked-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="8" width="11" height="8" rx="1.5"/><path d="M6 8V5.5a3 3 0 016 0V8"/></svg>
+      <div class="status-locked-text">
+        <div class="status-locked-label">Locked</div>
+        <div class="status-locked-msg">Choose your role</div>
+      </div>
+    </button>
+    <div class="status-in" id="pillIn" style="display:none">
+      <div class="status-in-dot"></div>
+      <div class="status-in-info">
+        <div class="status-in-label">Logged in as</div>
+        <div class="status-in-role" id="pillRoleName">Employee</div>
+      </div>
+      <button class="status-in-logout" id="btnLogout">Log out</button>
+    </div>
+    <div class="empty-msg" id="emptyMsg">Select a role and enter the access code to unlock the menu.</div>
+    <div class="nsec" id="sec-general" style="display:none">
+      <div class="nlbl">General</div>
+      <button class="ni" data-page="overview"><svg class="nico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg>Program overview</button>
+      <button class="ni" data-page="calculator"><svg class="nico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="12" rx="2"/><line x1="5" y1="8" x2="11" y2="8"/><line x1="8" y1="5" x2="8" y2="11"/></svg>Payout calculator</button>
+      <button class="ni" data-page="levels"><svg class="nico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12h3V8H2zM6.5 12h3V4h-3zM11 12h3V6h-3z"/></svg>Grant levels</button>
+      <button class="ni" data-page="rules"><svg class="nico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 2h8a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1z"/><line x1="5.5" y1="6" x2="10.5" y2="6"/><line x1="5.5" y1="9" x2="10.5" y2="9"/></svg>Rules &amp; process</button>
+    </div>
+    <div class="nsec" id="sec-emp" style="display:none">
+      <div class="nlbl">Employee</div>
+      <button class="ni" data-page="empvest"><svg class="nico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><polyline points="8,4 8,8 11,10"/></svg>Your vesting</button>
+      <button class="ni" data-page="emprefresh"><svg class="nico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 3v4h-4"/><path d="M3 13v-4h4"/><path d="M13 7A6 6 0 003 9"/></svg>Refresh grants</button>
+    </div>
+    <div class="nsec" id="sec-external" style="display:none">
+      <div class="nlbl">Advisor / Contributor</div>
+      <button class="ni" data-page="agreements"><svg class="nico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 2h7l3 3v9a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1z"/><polyline points="11,2 11,5 14,5"/></svg>Earning agreements</button>
+    </div>
+    <div class="nsec" id="sec-founder" style="display:none">
+      <div class="nlbl">Founder tools</div>
+      <button class="ni" data-page="scorecard"><svg class="nico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="2,10 6,6 9,9 14,4"/></svg>Impact scorecard</button>
+    </div>
+  </aside>
+
+  <main class="main" id="mainArea">
+    <div class="wrap">
+
+      <div class="page active" id="pg-onboarding">
+        <div class="ob-center">
+          <div class="ob-logo-big" role="img" aria-label="aim"></div>
+          <h1 class="ob-h1">Phantom Equity Program</h1>
+          <p class="ob-sub">A reward for people who create serious long-term value for AIM. Select your role and enter your access code to view the relevant sections.</p>
+          <div class="ob-q">I am a…</div>
+          <div class="role-grid">
+            <div class="rcard" data-role="employee">
+              <svg class="lock-badge" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="8" width="11" height="8" rx="1.5"/><path d="M6 8V5.5a3 3 0 016 0V8"/></svg>
+              <div class="rcard-ico" style="background:var(--teall)"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#0f6e56" stroke-width="1.6"><circle cx="9" cy="6" r="3"/><path d="M3 15c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg></div>
+              <div class="rcard-title">Employee</div>
+              <div class="rcard-desc">Full-time or part-time team member building AIM</div>
+            </div>
+            <div class="rcard" data-role="external">
+              <svg class="lock-badge" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="8" width="11" height="8" rx="1.5"/><path d="M6 8V5.5a3 3 0 016 0V8"/></svg>
+              <div class="rcard-ico" style="background:var(--aiml)"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#2563eb" stroke-width="1.6"><path d="M9 2l1.8 5.4H17l-4.9 3.6 1.8 5.4L9 13l-4.9 3.4 1.8-5.4L1 7.4h6.2z"/></svg></div>
+              <div class="rcard-title">Advisor / Contributor</div>
+              <div class="rcard-desc">External advisor or strategic, technical, operational contributor</div>
+            </div>
+            <div class="rcard" data-role="founder">
+              <svg class="lock-badge" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="8" width="11" height="8" rx="1.5"/><path d="M6 8V5.5a3 3 0 016 0V8"/></svg>
+              <div class="rcard-ico" style="background:var(--purl)"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#4338ca" stroke-width="1.6"><rect x="3" y="10" width="3" height="5" rx="1"/><rect x="7.5" y="6" width="3" height="9" rx="1"/><rect x="12" y="3" width="3" height="12" rx="1"/></svg></div>
+              <div class="rcard-title">Founder</div>
+              <div class="rcard-desc">Managing the programme and reviewing grants</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page" id="pg-overview">
+        <div class="phdr">
+          <div class="brow"><span class="bdg bdg-t">Confidential</span><span class="bdg bdg-b">May 2026</span></div>
+          <h1>Program overview</h1>
+          <p>A cash-based reward linked to AIM's future company value. Not real shares, but real upside.</p>
+        </div>
+        <div class="quote"><p>"We reward impact, not presence. If you help create serious company value, you share in the upside, earned through real measurable contribution."</p></div>
+        <div class="mets">
+          <div class="met"><div class="met-lbl">Pool size</div><div class="met-val">10%</div><div class="met-sub">of company value</div></div>
+          <div class="met"><div class="met-lbl">Total points</div><div class="met-val">10,000</div><div class="met-sub">phantom points</div></div>
+          <div class="met"><div class="met-lbl">Max per person</div><div class="met-val">1,000</div><div class="met-sub">by special approval</div></div>
+          <div class="met"><div class="met-lbl">Review cycle</div><div class="met-val">Quarterly</div><div class="met-sub">+ annual</div></div>
+        </div>
+        <div class="tc">
+          <div class="card">
+            <div class="card-title">What it is</div>
+            <div class="yn-row"><span>Cash reward at exit</span><span class="tick">YES</span></div>
+            <div class="yn-row"><span>Upside participation</span><span class="tick">YES</span></div>
+            <div class="yn-row"><span>Long-term alignment</span><span class="tick">YES</span></div>
+            <div class="yn-row"><span>Real shares or ownership</span><span class="cross">NO</span></div>
+            <div class="yn-row"><span>Voting rights</span><span class="cross">NO</span></div>
+            <div class="yn-row"><span>Board rights</span><span class="cross">NO</span></div>
+            <div class="yn-row"><span>Cap table dilution</span><span class="cross">NO</span></div>
+          </div>
+          <div class="card">
+            <div class="card-title">Exit pool size</div>
+            <table>
+              <thead><tr><th>AIM valuation</th><th style="text-align:right">10% pool</th></tr></thead>
+              <tr><td>£10M</td><td class="td-strong" style="text-align:right">£1M</td></tr>
+              <tr><td>£50M</td><td class="td-strong" style="text-align:right">£5M</td></tr>
+              <tr><td>£100M</td><td class="td-strong" style="text-align:right">£10M</td></tr>
+              <tr><td>£500M</td><td class="td-strong" style="text-align:right">£50M</td></tr>
+              <tr><td>£1B</td><td class="td-strong" style="text-align:right">£100M</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Two paths to earn points</div>
+          <div class="card-intro">AIM rewards two different kinds of people in two different ways. Both end up with phantom points, but how those points come into your hands is different.</div>
+          <div class="tc">
+            <div style="background:var(--teall);border-radius:var(--rs);padding:14px 16px;border:1px solid #6ee7b7">
+              <div style="font-size:11px;font-weight:700;color:var(--tealt);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Employees</div>
+              <div style="font-size:13px;color:var(--tealt);line-height:1.6"><strong>Granted upfront, vests over time.</strong> When you join, you receive a phantom grant. You earn ownership of those points over 4 years (with a 1-year cliff). Salary covers your work day-to-day; phantom equity is your share of long-term company value.</div>
+            </div>
+            <div style="background:var(--aiml);border-radius:var(--rs);padding:14px 16px;border:1px solid var(--aim)">
+              <div style="font-size:11px;font-weight:700;color:var(--aimt);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Advisors / Contributors</div>
+              <div style="font-size:13px;color:var(--aimt);line-height:1.6"><strong>Earned per outcome, no upfront grant.</strong> AIM signs an earning agreement listing what you can earn for each outcome. Points are awarded only when an outcome happens, and they're 100% yours immediately. No vesting, no waiting.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Point value at a glance</div>
+          <table>
+            <thead><tr><th>Points</th><th>% of company</th><th style="text-align:right">At £50M</th><th style="text-align:right">At £100M</th><th style="text-align:right">At £500M</th></tr></thead>
+            <tr><td class="td-strong">10</td><td>0.01%</td><td style="text-align:right">£5,000</td><td style="text-align:right">£10,000</td><td style="text-align:right">£50,000</td></tr>
+            <tr><td class="td-strong">50</td><td>0.05%</td><td style="text-align:right">£25,000</td><td style="text-align:right">£50,000</td><td style="text-align:right">£250,000</td></tr>
+            <tr><td class="td-strong">100</td><td>0.1%</td><td style="text-align:right">£50,000</td><td style="text-align:right">£100,000</td><td style="text-align:right">£500,000</td></tr>
+            <tr><td class="td-strong">250</td><td>0.25%</td><td style="text-align:right">£125,000</td><td style="text-align:right">£250,000</td><td style="text-align:right">£1.25M</td></tr>
+            <tr><td class="td-strong">500</td><td>0.5%</td><td style="text-align:right">£250,000</td><td style="text-align:right">£500,000</td><td style="text-align:right">£2.5M</td></tr>
+            <tr><td class="td-strong">1,000</td><td>1%</td><td style="text-align:right">£500,000</td><td style="text-align:right">£1M</td><td style="text-align:right">£5M</td></tr>
+          </table>
+        </div>
+
+        <div class="card">
+          <div class="card-title">How the math works</div>
+          <div class="card-intro">Every payout follows the same formula. Three steps.</div>
+          <div class="math-step">
+            <div class="math-step-num">Step 1 — The 10% pool</div>
+            <div class="math-step-text">AIM has set aside <strong>10%</strong> of company value as a phantom pool. That 10% is divided into <strong>10,000 points</strong>, so each point = <strong>0.001%</strong> of AIM's value.</div>
+          </div>
+          <div class="math-step">
+            <div class="math-step-num">Step 2 — Multiply by exit value</div>
+            <div class="math-step-text">When AIM is acquired or has a payout event, your owned points convert to cash at AIM's value at that moment.</div>
+          </div>
+          <div class="math-step">
+            <div class="math-step-num">Step 3 — Apply ownership</div>
+            <div class="math-step-text">Employees: ownership = vested %. You earn ownership over 4 years.<br>Advisors / Contributors: ownership = 100% the moment the outcome is verified. Points awarded are immediately yours.</div>
+          </div>
+          <div class="formula-box">
+            <strong>Payout = Owned Points × 0.001% × Exit Value</strong><br><br>
+            Example: 100 owned points, AIM exits at £100M<br>
+            = 100 × 0.001% × £100M<br>
+            = <strong>£100,000</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="page" id="pg-calculator">
+        <div class="phdr"><h1>Payout calculator</h1><p>Drag the sliders to estimate your payout at any exit scenario. For employees, "owned %" is your vested percentage. For advisors and contributors, it's the share of your potential agreement points that have actually been awarded.</p></div>
+        <div class="card"><div class="card-title">Points held</div><div class="slider-row"><div class="slider-labels"><span class="lbl">Phantom points granted or earned</span><span class="val" id="c-pts">100 pts</span></div><input type="range" min="1" max="1000" value="100" step="1" id="r-pts"><div class="slider-range"><span>1 pt</span><span>1,000 pts</span></div></div></div>
+        <div class="card"><div class="card-title">AIM exit value</div><div class="slider-row"><div class="slider-labels"><span class="lbl">Estimated exit / valuation</span><span class="val" id="c-exit">£100M</span></div><input type="range" min="5" max="500" value="100" step="5" id="r-exit"><div class="slider-range"><span>£5M</span><span>£500M</span></div></div></div>
+        <div class="card"><div class="card-title">Owned percentage</div><div class="slider-row"><div class="slider-labels"><span class="lbl">How much you actually own</span><span class="val" id="c-vest">100%</span></div><input type="range" min="0" max="100" value="100" step="5" id="r-vest"><div class="slider-range"><span>0%</span><span>100%</span></div></div></div>
+        <div class="payout-box"><div style="font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:var(--t3);margin-bottom:8px">Estimated payout</div><div class="payout-big" id="c-result">£100,000</div><div class="payout-note" id="c-note">100 pts · 100% owned · 0.100% of £100M</div></div>
+        <div class="card" style="margin-top:14px"><div class="card-title">Formula</div><div class="formula-box">Payout = Owned Points / 10,000 x 10% x Exit Value<br><br>Simplified: 1 point = 0.001% of AIM exit value</div></div>
+      </div>
+
+      <div class="page" id="pg-levels">
+        <div class="phdr"><h1 id="levels-h1">Grant levels</h1><p id="levels-sub">Tap a level card to see examples and payout estimates.</p></div>
+        <div class="ibox">Grant size depends on the scale of value created — not on hitting a specific number of clients, deals, or hours. A single major channel win can be more valuable than dozens of smaller deals. Founders judge each contribution on its actual impact.</div>
+        <div class="lgrid" id="lgrid"></div>
+        <div id="ldet" style="display:none"></div>
+        <div class="card" style="margin-top:14px">
+          <div class="card-title" id="caps-title">Caps per person type</div>
+          <div id="caps-table"></div>
+        </div>
+      </div>
+
+      <div class="page" id="pg-rules">
+        <div class="phdr"><h1>Rules &amp; process</h1><p>The foundational rules and the approval process for every grant or earning agreement.</p></div>
+        <div class="card"><div class="card-title">Core rules</div><div id="rulesList"></div></div>
+        <div class="card">
+          <div class="card-title">What earns phantom points</div>
+          <div class="card-intro">Phantom points reward measurable contributions that materially increase AIM's long-term company value. Examples below are illustrative. Anything that genuinely moves AIM forward in a sustained way is on the table — judged on impact, not on counts or hours.</div>
+          <div class="yn-row"><span><strong>Building things that ship.</strong> Prototypes, features, integrations, infrastructure that go into production and get used by clients.</span></div>
+          <div class="yn-row"><span><strong>Sustained delivery, not one-off help.</strong> Real ongoing involvement in execution where you actually move work forward.</span></div>
+          <div class="yn-row"><span><strong>Validated outcomes.</strong> Work that produced measurable retention, efficiency, or revenue impact.</span></div>
+          <div class="yn-row"><span><strong>Sustained pipeline of business.</strong> Bringing in meaningful long-term revenue through ongoing relationship work, not single intros.</span></div>
+          <div class="yn-row"><span><strong>Strategic channel access.</strong> Opening NHS, council frameworks, large care groups, or other major buyer channels at scale.</span></div>
+          <div class="yn-row"><span><strong>Technical defensibility.</strong> Building parts of AIM's product moat — AI engine, integrations, scheduling, compliance automation.</span></div>
+          <div class="yn-row"><span><strong>Operational scale.</strong> Removing founder bottlenecks, building processes, making AIM run independently.</span></div>
+          <div class="yn-row"><span><strong>Demos and sales execution.</strong> Actively running demos, closing meetings, project-managing pilots through to contract.</span></div>
+        </div>
+        <div class="card">
+          <div class="card-title">What does NOT earn phantom points</div>
+          <div class="yn-row"><span><strong>Ideas without execution.</strong> AI can generate ideas. AIM rewards delivery, not speculation.</span></div>
+          <div class="yn-row"><span><strong>One-off conversations.</strong> Single intros or pieces of advice with no measurable outcome or follow-through.</span></div>
+          <div class="yn-row"><span><strong>Single small deals already covered by Deal Partner commission.</strong> A one-off intro is paid via commission only — see note below.</span></div>
+          <div class="yn-row"><span><strong>Promises that haven't materialised.</strong> Future commitments don't earn points. Outcomes do.</span></div>
+          <div class="yn-row"><span><strong>Work fully covered by salary or commission</strong>, unless the impact is materially exceptional and produces lasting company value.</span></div>
+        </div>
+        <div class="ibox">
+          <strong>Deal Partner Programme overlap.</strong> The Deal Partner Programme pays per-deal commission for short-term revenue. Phantom equity rewards long-term company value on top of that. A single deal earns commission. Building a sustained pipeline, opening a major channel, or driving enterprise expansion as a deal partner can earn phantom points in addition to commission. The bigger the long-term value created, the more phantom points are on the table — judged on actual impact, not deal counts.
+        </div>
+
+        <div class="card">
+          <div class="card-title">Dilution &amp; pool changes</div>
+          <div class="card-intro"><strong>What is dilution?</strong> When AIM issues new equity (for example, raising investment), everyone's percentage share of the company gets slightly smaller, even though the total company value usually grows. The phantom pool can be affected the same way.</div>
+          <div class="yn-row"><span><strong>While AIM is bootstrapped or pre-Series A:</strong> the 10% phantom pool is fully protected. No dilution applies.</span></div>
+          <div class="yn-row"><span><strong>From a Series A or equivalent priced round onward:</strong> the pool may dilute pro rata alongside other shareholders. Founders may, at their discretion, top up the pool from new issuances to maintain the 10% target.</span></div>
+          <div class="yn-row"><span><strong>Already-awarded points are always preserved.</strong> Once points are awarded to you (employee grant or advisor/contributor agreement outcome), they cannot be reduced by future dilution.</span></div>
+          <div class="yn-row"><span><strong>Only the unallocated pool</strong> and the size of future grants are affected by any dilution event.</span></div>
+          <div class="ibox" style="margin-top:14px;margin-bottom:0">
+            Full legal terms covering dilution, exit events, tax treatment, leaver provisions, and clawback are set out in the signed grant or earning agreement. This UI summary is for clarity, not the binding contract.
+          </div>
+        </div>
+
+        <div class="card"><div class="card-title">Approval process</div><div id="stepsList"></div></div>
+      </div>
+
+      <div class="page" id="pg-empvest">
+        <div class="phdr"><h1>Your vesting schedule</h1><p>4-year vesting with a 1-year cliff. As an employee, you get a grant on day one and earn ownership of it over time.</p></div>
+
+        <div class="card">
+          <div class="card-title">Understanding vesting in plain English</div>
+          <div class="card-intro"><strong>Vesting</strong> means the percentage of your grant that you have actually earned and own at any moment in time. You don't get all your points the day you join — you earn them gradually as you stay with AIM. If you leave early, you keep what has vested. Anything unvested goes back to the pool.</div>
+          <div class="card-intro" style="margin-bottom:0"><strong>The cliff</strong> is the first 12 months. If you leave before reaching 12 months, you walk away with 0%. The cliff exists so people who join and leave quickly don't get phantom equity for short stints.</div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">The 4-year, 1-year cliff schedule</div>
+          <table>
+            <thead><tr><th>Time served</th><th style="text-align:right">Vested</th><th style="text-align:right">Why</th></tr></thead>
+            <tr><td>0 to 11 months</td><td style="text-align:right;color:var(--cor)">0%</td><td style="text-align:right;font-size:12px;color:var(--t3)">Cliff period</td></tr>
+            <tr><td>12 months</td><td class="td-strong" style="text-align:right">25%</td><td style="text-align:right;font-size:12px;color:var(--t3)">Cliff cleared, year 1 vests</td></tr>
+            <tr><td>24 months</td><td class="td-strong" style="text-align:right">50%</td><td style="text-align:right;font-size:12px;color:var(--t3)">Year 2 added</td></tr>
+            <tr><td>36 months</td><td class="td-strong" style="text-align:right">75%</td><td style="text-align:right;font-size:12px;color:var(--t3)">Year 3 added</td></tr>
+            <tr><td>48 months</td><td class="td-strong" style="text-align:right">100%</td><td style="text-align:right;font-size:12px;color:var(--t3)">Fully vested</td></tr>
+          </table>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Worked example — 100 points granted, AIM exits at £100M</div>
+          <table>
+            <thead><tr><th>Time served</th><th style="text-align:right">Vested %</th><th style="text-align:right">Vested points</th><th style="text-align:right">Payout</th></tr></thead>
+            <tr><td>6 months (still in cliff)</td><td style="text-align:right;color:var(--cor)">0%</td><td style="text-align:right;color:var(--t3)">0 pts</td><td style="text-align:right;color:var(--cor)">£0</td></tr>
+            <tr><td>12 months (cliff cleared)</td><td class="td-strong" style="text-align:right">25%</td><td class="td-strong" style="text-align:right">25 pts</td><td class="td-strong" style="text-align:right">£25,000</td></tr>
+            <tr><td>24 months</td><td class="td-strong" style="text-align:right">50%</td><td class="td-strong" style="text-align:right">50 pts</td><td class="td-strong" style="text-align:right">£50,000</td></tr>
+            <tr><td>36 months</td><td class="td-strong" style="text-align:right">75%</td><td class="td-strong" style="text-align:right">75 pts</td><td class="td-strong" style="text-align:right">£75,000</td></tr>
+            <tr><td>48 months (fully vested)</td><td class="td-strong" style="text-align:right">100%</td><td class="td-strong" style="text-align:right">100 pts</td><td class="td-strong" style="text-align:right">£100,000</td></tr>
+          </table>
+          <div class="ibox" style="margin-top:14px;margin-bottom:0">
+            <strong>How the £50,000 at 24 months is calculated:</strong><br>
+            100 points granted × 50% vested = 50 vested points<br>
+            50 ÷ 10,000 = 0.5% of the phantom pool<br>
+            0.5% × 10% (pool size) = 0.05% of company value<br>
+            0.05% × £100M (exit value) = <strong>£50,000</strong>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Vesting simulator</div>
+          <div class="card-intro">Drag the slider to see what happens at any point in time.</div>
+          <div class="slider-labels" style="margin-bottom:9px"><span class="lbl">Time served</span><span class="val" id="ev-label">24 months</span></div>
+          <input type="range" min="0" max="48" value="24" step="1" id="ev-range" style="margin-bottom:10px">
+          <div class="vleg">
+            <div class="vleg-item"><div class="vleg-dot" style="background:#f59e0b"></div>Cliff (unvested until 12 mo)</div>
+            <div class="vleg-item"><div class="vleg-dot" style="background:var(--teal)"></div>Vested</div>
+            <div class="vleg-item"><div class="vleg-dot" style="background:var(--bg3)"></div>Not yet vested</div>
+          </div>
+          <div class="vbar" id="vbar"></div>
+          <div class="vbar-labels"><span>0</span><span>12 mo</span><span>24 mo</span><span>36 mo</span><span>48 mo</span></div>
+          <div class="mets" style="margin-bottom:0">
+            <div class="met"><div class="met-lbl">Vested</div><div class="met-val" id="ev-pct">50%</div></div>
+            <div class="met"><div class="met-lbl">At 100 pts</div><div class="met-val" id="ev-pts">50 pts</div></div>
+            <div class="met"><div class="met-lbl">At £100M exit</div><div class="met-val" id="ev-pay">£50,000</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page" id="pg-emprefresh">
+        <div class="phdr"><h1>Refresh grants</h1><p>Reviewed periodically. Exceptional performance unlocks extra points on top of your initial grant.</p></div>
+        <div class="ibox">Refresh grants are not automatic. They require founder approval and are for performance materially above expectations.</div>
+        <div class="card">
+          <div class="card-title">Refresh grant ranges</div>
+          <table>
+            <thead><tr><th>Impact since last review</th><th style="text-align:right">Suggested grant</th></tr></thead>
+            <tr><td>Good contribution</td><td class="td-strong" style="text-align:right">5 to 25 pts</td></tr>
+            <tr><td>Strong contribution</td><td class="td-strong" style="text-align:right">25 to 75 pts</td></tr>
+            <tr><td>Major contribution</td><td class="td-strong" style="text-align:right">75 to 150 pts</td></tr>
+            <tr><td>Transformational contribution</td><td class="td-strong" style="text-align:right">150 to 300 pts</td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <div class="card-title">What counts as major impact</div>
+          <div class="yn-row"><span>Shipping a major product feature actively used by clients</span></div>
+          <div class="yn-row"><span>Materially improving retention or reducing churn</span></div>
+          <div class="yn-row"><span>Significantly reducing migration or onboarding time</span></div>
+          <div class="yn-row"><span>Building a process that removes founder dependency</span></div>
+          <div class="yn-row"><span>Leading critical system improvements (payroll, AI, scheduling)</span></div>
+        </div>
+        <div class="wbox">Day-to-day work covered by salary does not qualify for a refresh grant.</div>
+      </div>
+
+      <div class="page" id="pg-agreements">
+        <div class="phdr"><h1>Earning agreements</h1><p>How advisors and contributors earn phantom points. No upfront grant, no vesting — points are earned per outcome and immediately yours.</p></div>
+
+        <div class="ibox">
+          <strong>Why this is different from employees.</strong> Employees get a grant on day one and earn ownership over 4 years (vesting). Advisors and contributors don't — there's no employment relationship to gate. Instead, you sign an earning agreement that lists what you can earn for each verified outcome. Points are awarded only when an outcome happens, and they're 100% yours immediately. No vesting math, no waiting period.
+        </div>
+
+        <div class="card">
+          <div class="card-title">How it works in 4 steps</div>
+          <div class="step-item"><div class="step-line"><div class="step-dot">1</div><div class="step-conn"></div></div><div class="step-body"><div class="step-title">Sign an earning agreement</div><div class="step-sub">AIM and you sign a written agreement listing the outcomes you can earn points for, with a point value next to each one. The agreement is tailored to what you're actually doing — intros, technical work, strategic support, or a mix.</div></div></div>
+          <div class="step-item"><div class="step-line"><div class="step-dot">2</div><div class="step-conn"></div></div><div class="step-body"><div class="step-title">Do the work</div><div class="step-sub">Make the intro, build the prototype, run the demo, drive the strategy. Whatever's in your agreement.</div></div></div>
+          <div class="step-item"><div class="step-line"><div class="step-dot">3</div><div class="step-conn"></div></div><div class="step-body"><div class="step-title">Outcome verified by founders</div><div class="step-sub">When an outcome from your agreement actually happens, founders verify it. The corresponding points are awarded into your name.</div></div></div>
+          <div class="step-item"><div class="step-line"><div class="step-dot">4</div></div><div class="step-body"><div class="step-title">Points are 100% yours immediately</div><div class="step-sub">No waiting period, no vesting clock. From the moment they're awarded they're owned. They convert to cash at the next AIM payout event.</div></div></div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Track 1 — Strategic introductions &amp; channel access</div>
+          <div class="card-intro">For advisors and partners who open doors to clients, councils, NHS bodies, or large care groups. Points awarded follow the deal, not the conversation. This is also how Deal Partner activity earns phantom equity when it scales beyond single deals into sustained pipeline or major channel access.</div>
+          <table>
+            <thead><tr><th>Outcome</th><th style="text-align:right">% of agreement points awarded</th></tr></thead>
+            <tr><td>Mention or recommend AIM (talk only)</td><td class="td-zero" style="text-align:right">0%</td></tr>
+            <tr><td>Make warm intros that land real meetings</td><td class="td-strong" style="text-align:right">10%</td></tr>
+            <tr><td>Opportunity becomes qualified (commercial path opens)</td><td class="td-strong" style="text-align:right">25%</td></tr>
+            <tr><td>Contract signed through your work</td><td class="td-strong" style="text-align:right">50%</td></tr>
+            <tr><td>Sustained pipeline OR major channel established</td><td class="td-strong" style="text-align:right">100%</td></tr>
+          </table>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Track 2 — Technical / product work</div>
+          <div class="card-intro">For people building actual product with the AIM team — prototypes, integrations, AI work, hands-on engineering. You're getting your hands dirty in the codebase or design, not just commenting on it.</div>
+          <table>
+            <thead><tr><th>Outcome</th><th style="text-align:right">% of agreement points awarded</th></tr></thead>
+            <tr><td>Suggest an idea (no execution)</td><td class="td-zero" style="text-align:right">0%</td></tr>
+            <tr><td>Prototype designed and demoed to AIM team</td><td class="td-strong" style="text-align:right">15%</td></tr>
+            <tr><td>Code shipped into production</td><td class="td-strong" style="text-align:right">40%</td></tr>
+            <tr><td>Used by paying clients</td><td class="td-strong" style="text-align:right">65%</td></tr>
+            <tr><td>Driving measurable retention, efficiency, or revenue</td><td class="td-strong" style="text-align:right">100%</td></tr>
+          </table>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Track 3 — Sustained strategic / operational support</div>
+          <div class="card-intro">For people deeply involved in execution — long-running calls with the team, project management, hands-on strategic decisions with the founders. Real ownership, not occasional opinions.</div>
+          <table>
+            <thead><tr><th>Outcome</th><th style="text-align:right">% of agreement points awarded</th></tr></thead>
+            <tr><td>One-off opinions or casual chats</td><td class="td-zero" style="text-align:right">0%</td></tr>
+            <tr><td>Written deliverable that shapes a real decision</td><td class="td-strong" style="text-align:right">15%</td></tr>
+            <tr><td>Sustained period of consistent execution support</td><td class="td-strong" style="text-align:right">35%</td></tr>
+            <tr><td>Decision/strategy validated by measurable outcome</td><td class="td-strong" style="text-align:right">65%</td></tr>
+            <tr><td>Long-term embedded contribution with sustained results</td><td class="td-strong" style="text-align:right">100%</td></tr>
+          </table>
+        </div>
+
+        <div class="gbox">
+          <strong>Worked example.</strong> Suppose AIM and you sign a Track 1 agreement worth up to 200 points. You make warm intros that land meetings — 10% of 200 = 20 points awarded immediately. The opportunity becomes qualified — another 15% added (cumulative 25%) = 50 points total. The deal closes — 25% more added = 100 points total. You then build a sustained pipeline — full 100% earned = 200 points total. At a £100M exit, those 200 points are worth £200,000. If the deal had stalled at "qualified", you'd own 50 points = £50,000.
+        </div>
+
+        <div class="card">
+          <div class="card-title">Important rules</div>
+          <div class="rule-item"><div class="rule-num">1</div><div class="rule-text">Each agreement is tailored to one track at sign-off, with specific outcomes and point values written down.</div></div>
+          <div class="rule-item"><div class="rule-num">2</div><div class="rule-text">Founders verify each outcome before any points are awarded. No self-certification.</div></div>
+          <div class="rule-item"><div class="rule-num">3</div><div class="rule-text">No outcome means no points, full stop. Time alone never earns anything.</div></div>
+          <div class="rule-item"><div class="rule-num">4</div><div class="rule-text">Agreements expire after 24 months unless extended in writing. Outcomes hit during the agreement period are kept; future ones are not.</div></div>
+          <div class="rule-item"><div class="rule-num">5</div><div class="rule-text">Points awarded are 100% yours immediately. There is no vesting, no cliff, no waiting period.</div></div>
+          <div class="rule-item"><div class="rule-num">6</div><div class="rule-text">Ideas alone don't qualify. AIM can generate ideas with AI. Execution, delivery, and validated outcomes earn points.</div></div>
+          <div class="rule-item"><div class="rule-num">7</div><div class="rule-text">Founders judge scale on actual impact, not generic counts. A single major channel win can outweigh many smaller deals.</div></div>
+        </div>
+      </div>
+
+      <div class="page" id="pg-scorecard">
+        <div class="phdr"><h1>Impact scorecard</h1><p>Score a contribution across each category to determine the appropriate grant or earning agreement size. Internal use only.</p></div>
+        <div class="card">
+          <div class="card-title">Score each category 0 to 100</div>
+          <div id="scRows"></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding-top:16px;margin-top:4px;border-top:1px solid var(--bd)">
+            <span style="font-size:14px;font-weight:600">Weighted total</span>
+            <span style="font-size:24px;font-weight:800;color:var(--text)" id="sc-total">0</span>
+          </div>
+          <div class="score-result">
+            <div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-bottom:8px">Suggested allocation</div>
+            <div class="score-big" id="sc-big">0</div>
+            <div class="score-grant" id="sc-grant">Score a contribution above to see a recommendation</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Score interpretation</div>
+          <table>
+            <thead><tr><th>Score</th><th>Outcome</th></tr></thead>
+            <tr><td>0 to 39</td><td>No grant or agreement</td></tr>
+            <tr><td>40 to 59</td><td>5 to 25 points</td></tr>
+            <tr><td>60 to 74</td><td>25 to 100 points</td></tr>
+            <tr><td>75 to 89</td><td>100 to 250 points</td></tr>
+            <tr><td>90 to 100</td><td>250 to 500 pts, founder approval required</td></tr>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  var STATE = { role: null, page: 'onboarding', pendingRole: null };
+  var ROLE_NAMES = { employee: 'Employee', external: 'Advisor / Contributor', founder: 'Founder' };
+  var ROLE_PASSWORDS = { employee: 'aim-team-2026', external: 'aim-partner-2026', founder: 'aim-founder-2026' };
+  var PAGE_TITLES = {
+    'onboarding': 'Phantom Equity', 'overview': 'Program overview', 'calculator': 'Payout calculator',
+    'levels': 'Grant levels', 'rules': 'Rules & process', 'empvest': 'Your vesting',
+    'emprefresh': 'Refresh grants', 'agreements': 'Earning agreements', 'scorecard': 'Impact scorecard'
+  };
+  var ROLE_PAGES = {
+    employee: ['overview', 'calculator', 'levels', 'rules', 'empvest', 'emprefresh'],
+    external: ['overview', 'calculator', 'levels', 'rules', 'agreements'],
+    founder:  ['overview', 'calculator', 'levels', 'rules', 'scorecard']
+  };
+
+  function loadState() {
+    try { var s = sessionStorage.getItem('aim_role'); if (s && ROLE_NAMES[s]) STATE.role = s; } catch(e){}
+  }
+  function saveRole(role) {
+    try { if (role) sessionStorage.setItem('aim_role', role); else sessionStorage.removeItem('aim_role'); } catch(e){}
+  }
+
+  function render() {
+    var role = STATE.role;
+    var loggedIn = role !== null;
+    document.getElementById('pillLocked').style.display = loggedIn ? 'none' : 'flex';
+    document.getElementById('pillIn').style.display = loggedIn ? 'flex' : 'none';
+    document.getElementById('emptyMsg').style.display = loggedIn ? 'none' : 'block';
+    if (loggedIn) document.getElementById('pillRoleName').textContent = ROLE_NAMES[role];
+    document.getElementById('sec-general').style.display  = loggedIn ? 'block' : 'none';
+    document.getElementById('sec-emp').style.display      = role === 'employee' ? 'block' : 'none';
+    document.getElementById('sec-external').style.display = role === 'external' ? 'block' : 'none';
+    document.getElementById('sec-founder').style.display  = role === 'founder' ? 'block' : 'none';
+    var pages = document.querySelectorAll('.page');
+    for (var i = 0; i < pages.length; i++) pages[i].classList.remove('active');
+    var pg = document.getElementById('pg-' + STATE.page);
+    if (pg) pg.classList.add('active');
+    var navBtns = document.querySelectorAll('.ni');
+    for (var j = 0; j < navBtns.length; j++) {
+      var p = navBtns[j].getAttribute('data-page');
+      navBtns[j].classList.toggle('active', p === STATE.page);
+    }
+    document.getElementById('topTitle').textContent = PAGE_TITLES[STATE.page] || 'Phantom Equity';
+    var isMobile = window.innerWidth <= 720;
+    var showBack = isMobile && loggedIn && STATE.page !== 'onboarding' && STATE.page !== 'overview';
+    document.getElementById('btnBack').style.display = showBack ? 'flex' : 'none';
+  }
+
+  function login(role) {
+    if (!ROLE_NAMES[role]) return;
+    STATE.role = role;
+    STATE.page = 'overview';
+    saveRole(role);
+    buildLevels();
+    buildCaps();
+    render();
+    closeSidebar();
+    scrollMainTop();
+  }
+  function logout() {
+    STATE.role = null;
+    STATE.page = 'onboarding';
+    saveRole(null);
+    render();
+    closeSidebar();
+    scrollMainTop();
+  }
+  function navigate(pageId) {
+    if (!STATE.role) { STATE.page = 'onboarding'; render(); closeSidebar(); return; }
+    var allowed = ROLE_PAGES[STATE.role] || [];
+    if (allowed.indexOf(pageId) === -1) { closeSidebar(); return; }
+    STATE.page = pageId;
+    render();
+    closeSidebar();
+    scrollMainTop();
+  }
+  function scrollMainTop() { var m = document.getElementById('mainArea'); if (m) m.scrollTop = 0; }
+
+  function openPwModal(role) {
+    STATE.pendingRole = role;
+    document.getElementById('pwRoleName').textContent = ROLE_NAMES[role];
+    document.getElementById('pwInput').value = '';
+    document.getElementById('pwError').textContent = '';
+    document.getElementById('pwModal').classList.add('show');
+    setTimeout(function() { var i = document.getElementById('pwInput'); if (i) i.focus(); }, 80);
+  }
+  function closePwModal() { document.getElementById('pwModal').classList.remove('show'); STATE.pendingRole = null; }
+  function submitPw() {
+    var role = STATE.pendingRole; if (!role) return;
+    var input = (document.getElementById('pwInput').value || '').trim().toLowerCase();
+    var expected = (ROLE_PASSWORDS[role] || '').toLowerCase();
+    if (input === expected) { closePwModal(); login(role); }
+    else {
+      var box = document.getElementById('pwInput');
+      box.classList.add('shake');
+      setTimeout(function(){ box.classList.remove('shake'); }, 400);
+      document.getElementById('pwError').textContent = 'Incorrect access code';
+    }
+  }
+
+  function toggleSidebar() {
+    var sb = document.getElementById('sidebar'), ov = document.getElementById('overlay'), bg = document.getElementById('btnBurger');
+    var open = sb.classList.toggle('open');
+    ov.classList.toggle('visible', open);
+    bg.classList.toggle('open', open);
+  }
+  function closeSidebar() {
+    var sb = document.getElementById('sidebar'); if (!sb) return;
+    sb.classList.remove('open');
+    document.getElementById('overlay').classList.remove('visible');
+    document.getElementById('btnBurger').classList.remove('open');
+  }
+
+  function fmtGBP(n) {
+    if (n >= 1000000) return '£' + (Math.round(n / 100000) / 10) + 'M';
+    return '£' + Math.round(n).toLocaleString('en-GB');
+  }
+  function calcPayout() {
+    var pts = parseFloat(document.getElementById('r-pts').value);
+    var ex = parseFloat(document.getElementById('r-exit').value);
+    var vest = parseFloat(document.getElementById('r-vest').value);
+    document.getElementById('c-pts').textContent = pts + ' pts';
+    document.getElementById('c-exit').textContent = '£' + ex + 'M';
+    document.getElementById('c-vest').textContent = vest + '%';
+    var vPts = pts * (vest / 100);
+    var payout = (vPts / 10000) * 0.10 * ex * 1000000;
+    var pct = (vPts / 10000 * 10).toFixed(3);
+    document.getElementById('c-result').textContent = fmtGBP(payout);
+    document.getElementById('c-note').textContent = pts + ' pts · ' + vest + '% owned · ' + pct + '% of £' + ex + 'M';
+  }
+  function updateVesting() {
+    var m = parseInt(document.getElementById('ev-range').value, 10);
+    document.getElementById('ev-label').textContent = m + ' months';
+    var pct = 0;
+    if (m >= 48) pct = 100;
+    else if (m >= 12) pct = Math.round(25 + ((m - 12) / 36) * 75);
+    document.getElementById('ev-pct').textContent = pct + '%';
+    document.getElementById('ev-pts').textContent = Math.round(pct) + ' pts';
+    document.getElementById('ev-pay').textContent = '£' + Math.round(pct * 1000).toLocaleString('en-GB');
+    var bar = document.getElementById('vbar');
+    bar.innerHTML = '';
+    for (var i = 0; i < 48; i++) {
+      var seg = document.createElement('div');
+      if (i < m && m >= 12) seg.className = 'vseg ' + (i < 12 ? 'cliff' : 'on');
+      else seg.className = 'vseg';
+      bar.appendChild(seg);
+    }
+  }
+
+  var LEVELS_DATA = {
+    employee: [
+      { n:1, t:'Light contributor', pts:'5 to 25', badge:'bdg-b',
+        ex:['Above-and-beyond on a small task or area', 'Helpful one-off insight that improved a decision', 'Owned a small process improvement'],
+        p50:'£5k to £25k', p100:'£5k to £25k', p500:'£25k to £125k' },
+      { n:2, t:'Useful contributor', pts:'25 to 75', badge:'bdg-p',
+        ex:['Strong consistent contribution to a release', 'Owned an onboarding or workflow improvement that worked', 'Improved a customer-facing process measurably'],
+        p50:'£12.5k to £37.5k', p100:'£25k to £75k', p500:'£125k to £375k' },
+      { n:3, t:'Strong contributor', pts:'75 to 150', badge:'bdg-t',
+        ex:['Materially improved retention through your work', 'Major contributor to a flagship feature release', 'Significantly reduced migration or onboarding time'],
+        p50:'£37.5k to £75k', p100:'£75k to £150k', p500:'£375k to £750k' },
+      { n:4, t:'Key contributor', pts:'150 to 300', badge:'bdg-a',
+        ex:['Key team member who owns a critical product area', 'Major product contributor across multiple releases', 'Made AIM materially more scalable through your work'],
+        p50:'£75k to £150k', p100:'£150k to £300k', p500:'£750k to £1.5M' },
+      { n:5, t:'Senior strategic', pts:'300 to 600', badge:'bdg-c',
+        ex:['Senior leader who shifts AIM trajectory', 'Built major product defensibility (AI engine, scheduling, compliance, etc.)', 'Reduces founder dependency at scale across the company'],
+        p50:'£150k to £300k', p100:'£300k to £600k', p500:'£1.5M to £3M' },
+      { n:6, t:'Transformational', pts:'600 to 1,000', badge:'bdg-b',
+        ex:['Founder-level impact without being a founder', 'Built or led a critical product line end to end', 'Substantially increased AIM valuation through your work'],
+        p50:'£300k to £500k', p100:'£600k to £1M', p500:'£3M to £5M' }
+    ],
+    external: [
+      { n:1, t:'Light contributor', pts:'Up to 25 pts', badge:'bdg-b',
+        ex:['Made an intro that landed a real meeting', 'Reviewed strategy or product with substantive useful notes', 'Helped position one feature or message better'],
+        p50:'£5k to £25k', p100:'£5k to £25k', p500:'£25k to £125k' },
+      { n:2, t:'Useful contributor', pts:'Up to 75 pts', badge:'bdg-p',
+        ex:['Brought in meaningful early paying business through sustained work', 'Sustained useful technical input on real product calls over time', 'Helped close meaningful client situations through your relationship'],
+        p50:'£12.5k to £37.5k', p100:'£25k to £75k', p500:'£125k to £375k' },
+      { n:3, t:'Strong contributor', pts:'Up to 150 pts', badge:'bdg-t',
+        ex:['Built and shipped a working prototype that became part of the product', 'Drove a sustained pipeline of paying business', 'Sustained advisory relationship producing real outcomes over time'],
+        p50:'£37.5k to £75k', p100:'£75k to £150k', p500:'£375k to £750k' },
+      { n:4, t:'Key contributor', pts:'Up to 300 pts', badge:'bdg-a',
+        ex:['Drove sustained material pipeline of paying business', 'Built a major product component used across clients', 'Opened a meaningful new region or vertical for AIM'],
+        p50:'£75k to £150k', p100:'£150k to £300k', p500:'£750k to £1.5M' },
+      { n:5, t:'Senior strategic', pts:'Up to 600 pts', badge:'bdg-c',
+        ex:['Opened access to a major buyer (NHS body, council framework, large care group)', 'Drove significant enterprise expansion through sustained execution and demos', 'Built foundational technical capability (AI engine, integrations, infrastructure)'],
+        p50:'£150k to £300k', p100:'£300k to £600k', p500:'£1.5M to £3M' },
+      { n:6, t:'Transformational', pts:'Up to 1,000 pts', badge:'bdg-b',
+        ex:['Single-handedly opened a national-scale opportunity (NHS rollout, council framework)', 'Drove enterprise adoption that materially changed AIM valuation', 'Built critical technical infrastructure that defines AIM product moat'],
+        p50:'£300k to £500k', p100:'£600k to £1M', p500:'£3M to £5M' }
+    ]
+  };
+
+  function levelsForRole(role) {
+    if (role === 'employee') return LEVELS_DATA.employee;
+    return LEVELS_DATA.external;
+  }
+
+  function buildLevels() {
+    var role = STATE.role;
+    var levels = levelsForRole(role);
+    var grid = document.getElementById('lgrid');
+    grid.innerHTML = '';
+    for (var i = 0; i < levels.length; i++) {
+      var l = levels[i];
+      var card = document.createElement('div');
+      card.className = 'lcard';
+      card.setAttribute('data-idx', i);
+      card.tabIndex = 0;
+      card.innerHTML = '<div class="lcard-num">Level ' + l.n + '</div><div class="lcard-title">' + l.t + '</div><div class="lcard-pts">' + l.pts + '</div>';
+      grid.appendChild(card);
+    }
+    document.getElementById('ldet').style.display = 'none';
+    var sub = document.getElementById('levels-sub');
+    if (role === 'employee') sub.textContent = 'Tap a level card to see employee-track examples and payout estimates. Employees receive a grant on day one and vest over 4 years.';
+    else if (role === 'external') sub.textContent = 'Tap a level card to see advisor and contributor examples and payout estimates. Levels here represent the maximum points an earning agreement can be worth — actual points are awarded as outcomes are verified.';
+    else sub.textContent = 'Tap a level card to see examples and payout estimates.';
+  }
+
+  function pickLevel(i) {
+    var role = STATE.role;
+    var levels = levelsForRole(role);
+    var l = levels[i];
+    if (!l) return;
+    var cards = document.querySelectorAll('.lcard');
+    for (var c = 0; c < cards.length; c++) cards[c].classList.remove('sel');
+    var sel = document.querySelector('.lcard[data-idx="' + i + '"]');
+    if (sel) sel.classList.add('sel');
+    var det = document.getElementById('ldet');
+    det.style.display = 'block';
+    det.className = 'ldet';
+    det.innerHTML =
+      '<div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap">' +
+        '<span class="bdg ' + l.badge + '">Level ' + l.n + '</span>' +
+        '<span style="font-size:15px;font-weight:700;color:var(--text)">' + l.t + ' · ' + l.pts + '</span>' +
+      '</div>' +
+      l.ex.map(function(e) { return '<div class="ldet-ex"><span class="ldet-dot">·</span><span>' + e + '</span></div>'; }).join('') +
+      '<div style="background:var(--bg3);border-radius:var(--rs);padding:12px 14px;margin-top:12px;border:1px solid var(--bd)">' +
+        '<div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--t3);margin-bottom:8px">Payout estimates (at full earned points)</div>' +
+        '<div class="ldet-pays">' +
+          '<div class="ldet-pay"><span>At £50M: </span><strong>' + l.p50 + '</strong></div>' +
+          '<div class="ldet-pay"><span>At £100M: </span><strong>' + l.p100 + '</strong></div>' +
+          '<div class="ldet-pay"><span>At £500M: </span><strong>' + l.p500 + '</strong></div>' +
+        '</div>' +
+      '</div>';
+    if (window.innerWidth <= 720) det.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  var CAPS_DATA = {
+    employee: [
+      ['Strong employee', '300'],
+      ['Key employee', '600'],
+      ['Senior leader', '1,000'],
+      ['Transformational employee', '1,000+ (special)']
+    ],
+    external: [
+      ['Light advisor / contributor', '25'],
+      ['Useful advisor / contributor', '75'],
+      ['Strong advisor / contributor', '150'],
+      ['Strategic advisor / contributor', '300'],
+      ['Senior strategic advisor / contributor', '600'],
+      ['Transformational advisor / contributor', '1,000+ (special)']
+    ]
+  };
+
+  function buildCaps() {
+    var role = STATE.role;
+    var data = (role === 'employee') ? CAPS_DATA.employee : CAPS_DATA.external;
+    var label = (role === 'employee') ? 'Max grant points' : 'Max agreement points';
+    var html = '<table><thead><tr><th>Person type</th><th style="text-align:right">' + label + '</th></tr></thead>';
+    for (var i = 0; i < data.length; i++) {
+      html += '<tr><td>' + data[i][0] + '</td><td class="td-strong" style="text-align:right">' + data[i][1] + '</td></tr>';
+    }
+    html += '</table>';
+    document.getElementById('caps-table').innerHTML = html;
+  }
+
+  var SC_CATS = [
+    { label: 'Revenue / commercial impact', weight: 25 },
+    { label: 'Retention and customer success', weight: 20 },
+    { label: 'Product / technical impact', weight: 20 },
+    { label: 'Strategic value', weight: 20 },
+    { label: 'Operational scalability', weight: 10 },
+    { label: 'Brand / credibility impact', weight: 5 }
+  ];
+  var scScores = {};
+
+  function buildScorecard() {
+    var rows = document.getElementById('scRows');
+    rows.innerHTML = '';
+    SC_CATS.forEach(function(cat, i) {
+      scScores[i] = 0;
+      var div = document.createElement('div');
+      div.className = 'sc-cat';
+      div.innerHTML = '<div class="sc-header"><span class="sc-label">' + cat.label + '</span><div class="sc-meta"><span class="sc-weight">weight ' + cat.weight + '%</span><span class="sc-val" id="scv-' + i + '">0</span></div></div><input type="range" min="0" max="100" value="0" step="5" style="width:100%" data-idx="' + i + '">';
+      rows.appendChild(div);
+    });
+    rows.addEventListener('input', function(e) {
+      if (e.target.tagName !== 'INPUT') return;
+      var idx = parseInt(e.target.getAttribute('data-idx'), 10);
+      scScores[idx] = parseInt(e.target.value, 10);
+      document.getElementById('scv-' + idx).textContent = scScores[idx];
+      var total = 0;
+      SC_CATS.forEach(function(cat, j) { total += ((scScores[j] || 0) / 100) * cat.weight; });
+      total = Math.round(total);
+      document.getElementById('sc-total').textContent = total;
+      document.getElementById('sc-big').textContent = total;
+      document.getElementById('sc-grant').textContent =
+        total < 40 ? 'No allocation recommended' :
+        total < 60 ? '5 to 25 points' :
+        total < 75 ? '25 to 100 points' :
+        total < 90 ? '100 to 250 points' :
+                     '250 to 500 pts, founder approval required';
+    });
+  }
+
+  function buildRules() {
+    var rules = [
+      'No one gets points automatically.',
+      'Every point must be linked to a measurable outcome that AIM can verify.',
+      'Employees receive grants and vest over 4 years. Advisors and contributors earn points per outcome with no upfront grant.',
+      'The Deal Partner Programme handles per-deal commission. Phantom equity rewards long-term value created on top of that.',
+      'Allocation size is judged on actual impact and scale of value created. There are no fixed counts or thresholds.',
+      'Every grant or earning agreement requires founder or board approval. Nothing is automatic.',
+      '1,000 points is serious and should be extremely rare — equivalent to 1% of company value.',
+      'The structure can be reviewed and improved as AIM grows.'
+    ];
+    document.getElementById('rulesList').innerHTML = rules.map(function(r, i) {
+      return '<div class="rule-item"><div class="rule-num">' + (i+1) + '</div><div class="rule-text">' + r + '</div></div>';
+    }).join('');
+
+    var steps = [
+      ['Nomination', 'A founder, executive, or manager nominates the person'],
+      ['Impact review', 'Score the contribution using the AIM Impact Scorecard'],
+      ['Type assigned', 'Employee grant (vesting) OR advisor/contributor earning agreement (per-outcome)'],
+      ['Track assigned (advisors/contributors)', 'The relevant earning track is assigned (intros, technical, or sustained support)'],
+      ['Proposed size', 'Select a point range based on the scorecard outcome and scale of impact'],
+      ['Approval', 'Founders or board formally approve the grant or agreement'],
+      ['Conditions written', 'For employees: vesting schedule. For advisors/contributors: outcomes and per-outcome point values.'],
+      ['Tracking', 'Log grant or agreement in the internal register'],
+      ['Review', 'Revisit periodically and at the annual structure review']
+    ];
+    document.getElementById('stepsList').innerHTML = steps.map(function(s, i, arr) {
+      var last = i === arr.length - 1;
+      return '<div class="step-item"><div class="step-line"><div class="step-dot">' + (i+1) + '</div>' + (last ? '' : '<div class="step-conn"></div>') + '</div><div class="step-body"><div class="step-title">' + s[0] + '</div><div class="step-sub">' + s[1] + '</div></div></div>';
+    }).join('');
+  }
+
+  function wire() {
+    var cards = document.querySelectorAll('.rcard');
+    for (var i = 0; i < cards.length; i++) {
+      cards[i].addEventListener('click', function() { openPwModal(this.getAttribute('data-role')); });
+    }
+    document.getElementById('sidebar').addEventListener('click', function(e) {
+      var btn = e.target.closest('.ni');
+      if (!btn) return;
+      e.preventDefault();
+      var page = btn.getAttribute('data-page');
+      if (page) navigate(page);
+    });
+    document.getElementById('btnLogout').addEventListener('click', function(e) {
+      e.preventDefault(); e.stopPropagation(); logout();
+    });
+    document.getElementById('pillLocked').addEventListener('click', function() {
+      STATE.page = 'onboarding'; render(); closeSidebar();
+    });
+    document.getElementById('btnBurger').addEventListener('click', toggleSidebar);
+    document.getElementById('overlay').addEventListener('click', closeSidebar);
+    document.getElementById('btnBack').addEventListener('click', function() {
+      if (STATE.role) { STATE.page = 'overview'; render(); }
+    });
+    document.getElementById('pwSubmit').addEventListener('click', submitPw);
+    document.getElementById('pwCancel').addEventListener('click', closePwModal);
+    document.getElementById('pwInput').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') submitPw();
+      else if (e.key === 'Escape') closePwModal();
+    });
+    var rPts = document.getElementById('r-pts'), rExit = document.getElementById('r-exit'), rVest = document.getElementById('r-vest');
+    if (rPts) rPts.addEventListener('input', calcPayout);
+    if (rExit) rExit.addEventListener('input', calcPayout);
+    if (rVest) rVest.addEventListener('input', calcPayout);
+    var ev = document.getElementById('ev-range');
+    if (ev) ev.addEventListener('input', updateVesting);
+
+    document.getElementById('lgrid').addEventListener('click', function(e) {
+      var card = e.target.closest('.lcard');
+      if (!card) return;
+      var idx = parseInt(card.getAttribute('data-idx'), 10);
+      pickLevel(idx);
+    });
+
+    window.addEventListener('resize', render);
+  }
+
+  function init() {
+    loadState();
+    buildScorecard();
+    buildRules();
+    buildLevels();
+    buildCaps();
+    wire();
+    calcPayout();
+    updateVesting();
+    if (STATE.role) STATE.page = 'overview';
+    render();
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+</script>
+</body>
+</html>
